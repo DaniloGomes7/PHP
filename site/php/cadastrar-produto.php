@@ -1,29 +1,39 @@
-<html>               
-    <head>
-        <meta charset="UTF-8" />
-        <title>Tela de cadastro produto</title>
-        <link rel="stylesheet" type="text/css" href="../css/cadastroProduto.css">
-    </head>
-    <body class="corpo">
-        <div class="container">
-            <div class="formulario">
-                <form id="form-cadastropd" action="../php/cadastrar-produto.php" method="POST">
-                    <h3>Cadastro de Produto</h3>
-                    <input type="text" name="nome" placeholder="Nome do Produto" required minlength="3" maxlength="80">
+<html>
 
-                    <input type="text" name="marca" placeholder="Marca" required minlength="3" maxlength="80">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tela de cadastro produto</title>
+    <link rel="stylesheet" type="text/css" href="../css//cadastroProduto.css">
+</head>
 
-                    <input type="text" name="preco" placeholder="Preço" required minlength="3" maxlength="80">
+<body class="corpo">
+    <div class="menu">
+        <ul id="menu-horizontal">
+            <li><a href="./home.php"> INICIO </a></li>
+            <li><a href="./cadastrar-produto.php"> CADASTRAR PRODUTO </a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="formulario">
+            <form id="form-cadastropd" action="../php/cadastrar-produto.php" method="POST">
+                <h3>Cadastro de Produto</h3>
+                <input type="text" name="nome" placeholder="Nome do Produto" required minlength="3" maxlength="80">
 
-                    <input type="text" name="descricao" placeholder="Descrição" required minlength="3" maxlength="300">
+                <input type="text" name="marca" placeholder="Marca" required minlength="3" maxlength="80">
 
-                    <input type="submit" value="CONFIRMAR">
-                </form>
-            </div>
+                <input type="text" name="preco" placeholder="Preço" required minlength="3" maxlength="80">
+
+                <input type="text" name="descricao" placeholder="Descrição" required minlength="3" maxlength="300">
+
+                <input type="submit" value="Cadastrar">
         </div>
-    </body>
+        </form>
+    </div>
+    </div>
+</body>
+
 </html>
-<?php 
+<?php
 
 include("conexao.php");
 

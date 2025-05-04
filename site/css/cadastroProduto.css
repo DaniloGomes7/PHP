@@ -1,28 +1,95 @@
+*{
+    margin: 0%;
+}
 
 .corpo {
-    display: flex;
+    display: flexbox;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    color: rgb(255, 0, 0);
+    background-color:#1100ff96;
+}
+
+h3{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .container {
-    background-color: #672626;
-    padding : 25px;
+    
+    background-color: #ffffff;
+    padding : 30px;
     border-radius: 10px;
-    margin-top: 120px;
-    box-shadow: 4px 4px 4px rgb(255, 0, 187);
-    width : 350px
+    width : 320px;
+    margin-left: 600px;
+    margin-top: 150px;
+}
+
+.formulario{
+    align-items: flex-start;
+    
 }
 
 input[type="text"]{
-    width: 85%;
-    padding: 15px;
+    width: 300px;
+    padding: 17px;
     margin: 10px;
-    border: 3px solid rgb(0, 252, 252);
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 5px;
     font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 300px;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(4, 107, 19);
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+.menu {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+#menu-horizontal li {
+
+    display: inline-block;
+    list-style-type: none;
+    font-size: 20px;
+
+}
+
+#menu-horizontal li a {
+
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 10px;
+}
+
+#menu-horizontal li a:hover {
+
+    background-color: rgb(106, 0, 255);
+    border-radius: 40px;
+    color: white;
+    transition: background .4s;
+    cursor: pointer;
 }
 
 

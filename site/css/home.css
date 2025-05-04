@@ -4,14 +4,23 @@
 
 .corpo{
     display: flexbox;
-    background-color: rgb(17, 0, 255);
+    background-color: #1100ff96;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-h1 , h2 { 
+h1 { 
    justify-self: center;
+   font-size: 50px;
    padding: 10px;
+   margin-top: 100px;
    color: antiquewhite;
+}
+
+h2{
+    justify-self: center;
+    padding: 10px;
+
+    color: rgb(0, 0, 0);
 }
 
 .menu {
@@ -40,8 +49,9 @@ h1 , h2 {
 
 #menu-horizontal li a:hover {
 
-    background-color: rgb(221, 154, 255);
+    background-color: rgb(106, 0, 255);
     border-radius: 40px;
+    color: white;
     transition: background .4s;
     cursor: pointer;
 }
